@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc255wg8440ti"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6js2d"]
+texture_filter = 1
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_3ayqp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o04kf"]
+render_priority = 7
+next_pass = SubResource("CanvasItemMaterial_3ayqp")
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+albedo_color = Color(0, 0.208963, 9.62615e-08, 1)
+albedo_texture = SubResource("CanvasTexture_6js2d")
+
+[node name="world" type="Node3D"]
+
+[node name="Base" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.575201, -0.386568, -1.87911)
+size = Vector3(127.907, 1, 129.955)
+material = SubResource("StandardMaterial3D_o04kf")
